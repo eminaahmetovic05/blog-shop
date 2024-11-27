@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* HEADER SEKCIJA */
+header {
+    background: linear-gradient(to left,#e600d3, #d8a2d1);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header ul li a:hover {
+    font-weight: bold;
+}
+
+header ul li a:focus {
+    color: black;
+    font-weight: bold;
+}
+/* KRAJ HEADER SEKCIJE */
+
+
+/* HERO SEKCIJA */
+.hero {
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: linear-gradient(to left,#e600d3, #d8a2d1); 
+   display: flex;
+   justify-content: center;
+}
+
+.hero .hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .hero-content .dogs  {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.hero .hero-content .dogs img {
+    width: 15%;
+}
+
+.hero .hero-content h1 {
+    font-size: 55px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero .hero-content h2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.hero .hero-content .buttons {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.hero .hero-content .buttons a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.hero .hero-content .buttons a:hover {
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+/* KRAJ HERO SEKCIJE */
+
+
+/* INFO SEKCIJA */
+.info{
+    padding: 50px;
+    text-align: center;
+}
+
+.info h3 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+/* KRAJ INFO SEKCIJE */
+
+
+/* SLIDER */
+.slide img {
+    width: 100%;
+    max-height: 700px;
+    display: block;
+    padding-bottom: 30px;
+}
+/* KRAJ SLIDERA */
+
+
+/* MOPS COVID SEKCIJA*/
+.mops-covid {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    background-color: rgb(202, 140, 202);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.mops-covid .mops-inner {
+    line-height: 30px;
+}
+
+.mops-covid h3 {
+    font-size: 30px;
+}
+
+.mops-covid .mops-inner p {
+    padding-top: 25px;
+    font-weight: 600;
+}
+
+.mops-covid .mops-image {
+   text-align: center;
+}
+/* KRAJ MOPS COVID SEKCIJE*/
+
+
+/* BLOG SEKCIJA*/
+.blog-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;  
+}
+
+.blog-section .uppersection h3 {
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.blog-section .blog-posts {
+    width: 100%;
+    color: white;
+}
+.blog-section .blog-posts .blog-card{
+    display: inline-block;
+    width: 22%;
+    margin: 8px;    
+    background-color: #753e80;
+    border: 1px solid black;
+    position: relative;
+}
+
+.blog-section .blog-posts .blog-card img {
+    width: 100%;
+    height: 220px;
+}
+
+.blog-section .blog-posts .blog-card h4 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.blog-section .blog-posts .blog-card h6 {
+    color: white;
+}
+
+.blog-section .blog-posts .blog-card p {
+    padding: 10px;
+}
+
+.blog-section .blog-posts .blog-card a {
+    padding: 10px;
+    text-decoration: none;
+    background-color: #3d4df5;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.blog-section .blog-card:hover {
+    background-color: #570087;
+    position: relative;
+    top: -10px;
+}
+/* KRAJ BLOG SEKCIJE */
+
+
+/* GALERIJA */
+.gallery-section {
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #eeb011;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.gallery-section .gallery-inner {
+    line-height: 30px;
+}
+
+.gallery-section h3 {
+    color: black;
+    font-size: 30px;
+}
+
+.gallery-section .gallery-inner p {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    color: black;
+    line-height: 30px;
+}
+
+.gallery-section .gallery-inner a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.gallery-section .gallery-inner a:hover {
+    color: white;
+    background-color: rgba(77, 145, 77, 0.815);
+    transition: 0.5s;
+}
+
+.gallery-section .gallery-image {
+   text-align: center;
+}
+/* KRAJ GALERIJE */
+
+
+/*KALKULATOR*/
+
+ h3{
+    text-align: center;
+    padding-top: 50px;
+}
+.dog-age-calculator{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 30px;
+    max-width: 450px; 
+    margin: 25px auto 25px auto;
+    padding: 30px;
+    border: 1px solid black;
+    background-color: #FFB2E4;
+}
+
+/*KRAJ KALKULATORA*/
+
+/* FOOTER */
+footer {
+    background-color: rgb(133, 115, 115);
+    padding: 10px 50px;
+    text-align: center;
+    color: white;
+}
+/* KRAJ FOOTERA*/
+
+
+@media(max-width: 900px){
+
+    .mops-covid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .mops-covid h3 {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .mops-covid p {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .mops-covid .mops-image img {
+        text-align: center;
+        display: inline-block;
+    }
+
+    .blog-section .blog-posts .blog-card {
+        width: 45%;
+        margin-top: 10px;
+    }
+
+    .blog-section .blog-posts .blog-card img {
+        width: 100%;
+    }
+
+    .gallery-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-section .gallery-inner {
+        text-align: center;
+    }
+
+    .gallery-section .gallery-inner h3 {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .gallery-section .gallery-inner p {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .gallery-section  .gallery-image img {
+        margin-top: 40px;
+        text-align: center;
+        display: inline-block;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:730px) {
+    header {
+       padding: 0;
+    }
+
+    header .logo img {
+        display: none;
+    }
+
+    header ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    header ul li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 0;
+        border-bottom: 1px solid white;
+    }
+
+    .hero {
+        padding-bottom: 50px;
+        padding-top: 50px;
+        text-align: center;
+    } 
+}
+
+@media screen and (max-width:500px){
+    .blog-section .blog-posts .blog-card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}

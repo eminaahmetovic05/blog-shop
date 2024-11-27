@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER SEKCIJA */
+header {
+    background: linear-gradient(to left,#e600d3, #d8a2d1);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header ul li a:hover {
+    font-weight: bold;
+}
+
+header ul li a:focus {
+    color: black;
+    font-weight: bold;
+}
+/* KRAJ HEADER SEKCIJE */
+
+
+/* BLOG POST */
+h1 {
+    padding: 30px;
+    text-align: center;
+}
+
+.p1 {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.img {
+    text-align: center;
+    padding-bottom: 30px;
+}
+/* KRAJ BLOG POSTA */
+
+
+footer {
+    background-color: rgb(133, 115, 115);
+    padding: 10px 50px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width:730px) {
+    header {
+       padding: 0;
+    }
+
+    header .logo img {
+        display: none;
+    }
+
+    header ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    header ul li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 0;
+        border-bottom: 1px solid white;
+    }
+
+    .p1 img {
+        width: 100%;
+    }
+}

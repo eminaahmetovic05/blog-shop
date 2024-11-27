@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* HEADER SEKCIJA */
+header {
+    background: linear-gradient(to left,#e600d3, #d8a2d1);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header ul li a:hover {
+    font-weight: bold;
+}
+
+header ul li a:focus {
+    color: black;
+    font-weight: bold;
+}
+/* KRAJ HEADER SEKCIJE */
+
+
+/* BLOG SEKCIJA */
+.blog-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.blog-section .uppersection p {
+    padding-top: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3d4df5;
+}
+
+.blog-section .uppersection h3 {
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.blog-section .blog-posts {
+    width: 100%;
+    color: white;
+}
+
+.blog-section .blog-posts .blog-card{
+    display: inline-block;
+    width: 22%;
+    margin: 8px;    
+    background-color: #753e80;
+    border: 1px solid black;
+    position: relative;
+}
+
+.blog-section .blog-posts .blog-card img {
+    width: 100%;
+    height: 220px;
+}
+
+.blog-section .blog-posts .blog-card h4 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.blog-section .blog-posts .blog-card h6 {
+    color: white;
+}
+
+.blog-section .blog-posts .blog-card p {
+    padding: 10px;
+}
+
+.blog-section .blog-posts .blog-card a {
+    padding: 10px;
+    text-decoration: none;
+    background-color: #3d4df5;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.blog-section .blog-card:hover {
+    background-color: #570087;
+    position: relative;
+    top: -10px;
+} 
+/* KRAJ BLOG SEKCIJE */
+
+footer {
+    background-color: rgb(133, 115, 115);
+    padding: 10px 50px;
+    text-align: center;
+    color: white;
+}
+
+
+@media(max-width:900px){
+    .blog-section .blog-posts .blog-card {
+        width: 45%;
+        margin-top: 10px;
+    }
+
+    .blog-section .blog-posts .blog-card img {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:730px) {
+    header {
+       padding: 0;
+    }
+
+    header .logo img {
+        display: none;
+    }
+
+    header ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    header ul li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 0;
+        border-bottom: 1px solid white;
+    }
+
+}
+
+
+@media(max-width:500px){
+    .blog-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .blog-section .blog-posts .blog-card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+    } 
+
+    .blog-section .blog-posts .blog-card img {
+        width: 100%;
+    }
+}

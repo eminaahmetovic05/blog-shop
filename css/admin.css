@@ -1,0 +1,87 @@
+body {
+    background-color: #ff9fb4;
+}
+
+/* Center the form on the page */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style the login and admin buttons */
+button {
+    background-color: #ff6b81;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff4757;
+}
+
+/* Center the buttons */
+#loginBtn,
+#adminBtn {
+    margin-top: 10px;
+}
+
+/* Style the heading */
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2d3436;
+    text-align: center;
+}
+
+/* Style the title */
+h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #2d3436;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style the labels */
+label {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #2d3436;
+}

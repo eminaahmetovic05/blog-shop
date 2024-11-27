@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/trgovina.css">
+    <title>Shop</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F7C3B1;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        button  {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .card p {
+            margin: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+        }
+        
+  
+/* HEADER SEKCIJA */
+header {
+    background: linear-gradient(to left,#e600d3, #d8a2d1); 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header ul li a:hover {
+    font-weight: bold;
+}
+
+header ul li a:focus {
+    color: black;
+    font-weight: bold;
+}
+/* KRAJ HEADER SEKCIJE */
+
+    </style>
+</head>
+
+ <header>
+        <div class="navigation">
+            <div class="logo">
+                <img src="images/logo2.png" alt="">
+            </div>
+            <ul>
+                <li>
+                    <a href="trgovina.php">Nagrade</a>
+                </li>
+                <li>
+                    <a href="shop.php">Trgovina</a>
+                </li>
+                <li>
+                    <a href="index.html">Početna</a>
+                </li>
+                <li>
+                    <a href="about.html">O nama</a>
+                </li>
+                <li>
+                    <a href="contact.php">Kontakt</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Galerija</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+<body>
+    <div class="grid">
+<?php
+$host = "localhost";
+$db = "maturski";
+$name = "root";
+$pass = "";
+
+$conn = mysqli_connect($host, $name, $pass, $db);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+if (isset($_POST['naziv']) && isset($_POST['cijena'])) {
+    $naziv = $_POST['naziv'];
+    $cijena = $_POST['cijena'];
+
+    $sql = "INSERT INTO korpa(naziv, cijena) VALUES ('$naziv', '$cijena')";
+
+    if (mysqli_query($conn, $sql)) {
+      // do nothing
+    } 
+}
+
+$sql = "SELECT naziv, cijena, slika FROM shop";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo "<div class='card'>";
+        echo "<p>" . $row["naziv"] . "</p>";
+        echo "<p>" . $row["cijena"] . "</p>";
+        echo "<div style='height:60%;'><img src='images/".$row["slika"] . "'style='margin:2px;width:100%;height:100%;object-fit:contain;'></div>";
+        
+
+        
+        
+        echo "<form method='POST'>";
+        echo "<input type='hidden' name='naziv' value='" . $row["naziv"] . "'>";
+        echo "<input type='hidden' name='cijena' value='" . $row["cijena"] . "'>";
+        echo "<input type='hidden' name='slika' value='" . $row["slika"] . "'>";
+    
+        echo "<button type='submit' style='background-color: purple;'>Kupi</button>";
+        echo "</form>";
+        echo "</div>";
+    }
+} else {
+    echo "0 results";
+}
+
+$conn->close();
+?>*/
+        
+    </div>
+
+    
+     <footer>
+        <p>Copyright © 2023 Elektrotehnička škola , Tuzla</p>
+    </footer>
+</body>
+
+
+
+</html>

@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER SEKCIJA */
+header {
+    background: linear-gradient(to left,#e600d3, #d8a2d1);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header ul li a:hover {
+    font-weight: bold;
+}
+
+header ul li a:focus {
+    color: black;
+    font-weight: bold;
+}
+/* KRAJ HEADER SEKCIJE */
+
+
+/* DRUŠTVENE MREŽE */
+.contact-section {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-section p {
+    text-align: center;
+    padding-right: 20px;
+}
+
+.contact-buttons .contact-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fa {
+    padding: 20px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    font-size: 1.5rem
+
+  }
+  
+.fa:hover {
+      opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.contact-buttons .contact-button p {
+    margin-left: 25px;
+}
+
+.fa-instagram {
+    background: rgb(193,53,132);
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-envelope {
+      background-color: rgb(218, 77, 77);
+      color: white;
+  }
+
+  .fa-phone {
+      background-color: rgb(35, 184, 35);
+      color: white;
+  }
+/* KRAJ DRUŠTVENIH MREŽA */
+
+
+/* KONTAKT FORMA */
+form {
+    max-width: 500px; 
+    margin: 25px auto 25px auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #444;
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+
+input[type=submit]:hover {
+    background-color:#BDBDBD ;
+    color: black;
+}
+
+#tekst {
+    display: inline;
+    margin-left: 30px;
+}
+
+
+#info-tekst1, #info-tekst2, #info-tekst3 {
+    margin-top: 0;
+}
+/* KRAJ KONTAKT FORME */
+
+
+/* MAPA */
+.map {
+    position: relative;
+    padding-bottom: 50%;
+}
+.map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+footer {
+    background-color: rgb(133, 115, 115);
+    padding: 10px 50px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width:730px) {
+    header {
+       padding: 0;
+    }
+
+    header .logo img {
+        display: none;
+    }
+
+    header ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    header ul li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 0;
+        border-bottom: 1px solid white;
+    }
+
+    .contact-section {
+        padding: 20px;        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-section p {
+        padding-right: 0;
+    }
+
+    .map  {
+        padding: 20px;
+    }
+
+    .map  iframe{
+        height: 400px;
+    }
+}
